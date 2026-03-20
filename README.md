@@ -1,66 +1,49 @@
-# Xtreck Group Static Website
+# Xtreck Group Website
 
-This is a static HTML website for **Xtreck Group**, with two offerings:
-
-- **Xtreck Carbon** — carbon accounting platform
-- **Xtreck Support** — complete ownership model of business support
-
-## Included pages
-
-- `index.html` — homepage
-- `about.html` — group overview
-- `xtreck-carbon.html` — Xtreck Carbon page
-- `xtreck-support.html` — Xtreck Support page
-- `contact.html` — contact page with demo form
-- `privacy.html` — starter privacy page
-- `terms.html` — starter terms page
+Static HTML website for Xtreck Group, including:
+- Home page
+- About page
+- Xtreck Carbon page
+- Xtreck Support page
+- Contact page
+- Privacy Policy
+- Terms & Conditions
 
 ## Structure
 
-```text
-xtreck-website/
-├── index.html
-├── about.html
-├── xtreck-carbon.html
-├── xtreck-support.html
-├── contact.html
-├── privacy.html
-├── terms.html
-├── README.md
-└── assets/
-    ├── css/
-    │   └── style.css
-    └── js/
-        └── main.js
-```
+- `index.html`
+- `about.html`
+- `xtreck-carbon.html`
+- `xtreck-support.html`
+- `contact.html`
+- `privacy.html`
+- `terms.html`
+- `assets/css/style.css`
+- `assets/js/main.js`
 
 ## Local preview
 
-You can open `index.html` directly in a browser, or run a local static server.
-
-### Python
+Open `index.html` in a browser, or run a local server:
 
 ```bash
-python3 -m http.server 8080
+python3 -m http.server 8000
 ```
 
-Then open `http://localhost:8080`
+Then visit `http://localhost:8000`.
 
-## Deploy options
+## Deploy to GitHub
 
-### GitHub Pages
-1. Push these files to a GitHub repository.
-2. In repository settings, enable GitHub Pages.
-3. Set the source to the root of the main branch.
+```bash
+git init
+git add .
+git commit -m "Initial Xtreck Group website"
+git branch -M main
+git remote add origin <your-repo-url>
+git push -u origin main
+```
 
-### Traditional hosting / server
-Upload the contents of this folder to the web root for `xtreck.com`.
+## Notes
 
-## Recommended next steps
-
-- Replace placeholder email addresses with your real contact details
-- Add your logo and favicon
-- Connect the contact form to Formspree, Netlify Forms or your backend
-- Add SEO tags, sitemap.xml and robots.txt
-- Add analytics and cookie consent if required
-- Replace starter legal text with reviewed legal copy
+- The contact form is currently static.
+- Replace legal placeholder text before launch.
+- You can deploy this as a static site on GitHub Pages, Netlify, Vercel, S3/CloudFront, or your own hosting.

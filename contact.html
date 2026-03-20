@@ -5,22 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Xtreck Group</title>
   <meta name="description" content="Contact Xtreck Group about Xtreck Carbon and Xtreck Support." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="logo" href="index.html">Xtreck<span>Group</span></a>
-      <button class="nav-toggle" aria-label="Open menu">☰</button>
+      <a class="logo" href="index.html">Xtreck Group</a>
+      <button class="nav-toggle" aria-label="Open navigation">☰</button>
       <nav class="site-nav">
-        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="xtreck-carbon.html">Xtreck Carbon</a>
         <a href="xtreck-support.html">Xtreck Support</a>
-        <a href="contact.html" class="btn btn-sm active">Contact</a>
+        <a href="contact.html" class="btn btn-small">Contact</a>
       </nav>
     </div>
   </header>
@@ -28,58 +24,37 @@
   <main>
     <section class="page-hero">
       <div class="container narrow">
-        <p class="eyebrow">Contact</p>
-        <h1>Let’s discuss your requirements</h1>
-        <p class="lead">Use this page as your initial contact point for both Xtreck Carbon and Xtreck Support enquiries.</p>
+        <span class="eyebrow">Contact</span>
+        <h1>Let’s start a conversation.</h1>
+        <p>Use this page as a starting point for enquiries about Xtreck Carbon or Xtreck Support.</p>
       </div>
     </section>
 
     <section class="section">
-      <div class="container grid-2">
-        <div class="card form-card">
-          <h2>Send an enquiry</h2>
-          <form class="contact-form">
-            <label>
-              Full name
-              <input type="text" placeholder="Your name" />
-            </label>
-            <label>
-              Email address
-              <input type="email" placeholder="you@example.com" />
-            </label>
-            <label>
-              Interested in
-              <select>
-                <option>Xtreck Carbon</option>
-                <option>Xtreck Support</option>
-                <option>Both offerings</option>
-              </select>
-            </label>
-            <label>
-              Message
-              <textarea rows="6" placeholder="Tell us a bit about your enquiry"></textarea>
-            </label>
-            <button type="submit" class="btn">Submit enquiry</button>
-            <p class="form-note">This is a static demo form. Connect it to Formspree, Netlify Forms, Basin or your backend when deploying.</p>
-          </form>
-        </div>
-
+      <div class="container two-col content-grid">
         <div>
-          <div class="card soft-card contact-side">
-            <h3>Business enquiries</h3>
-            <p>Email: hello@xtreck.com</p>
-            <p>Website: xtreck.com</p>
-            <p>Offerings: Xtreck Carbon and Xtreck Support</p>
-          </div>
-          <div class="card soft-card contact-side">
-            <h3>Suggested next additions</h3>
-            <ul>
-              <li>Working enquiry form integration</li>
-              <li>Google Analytics or Plausible</li>
-              <li>SEO metadata and sitemap</li>
-              <li>Case studies and trust signals</li>
-            </ul>
-          </div>
+          <h2>Contact form</h2>
+          <form class="contact-form">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name" />
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com" />
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="6" placeholder="Tell us a bit about your enquiry"></textarea>
+
+            <button type="submit" class="btn">Send enquiry</button>
+          </form>
+          <p class="form-note">This form is a static placeholder and can be connected to Formspree, Netlify Forms, AWS Lambda or your preferred backend.</p>
+        </div>
+        <div class="card soft">
+          <h3>Enquiry areas</h3>
+          <ul class="tick-list">
+            <li>Xtreck Carbon demos and platform discussions</li>
+            <li>Xtreck Support ownership model enquiries</li>
+            <li>Partnership and strategic conversations</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -87,28 +62,9 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div>
-        <a class="logo footer-logo" href="index.html">Xtreck<span>Group</span></a>
-        <p>Umbrella company for carbon accounting solutions and business support services.</p>
-      </div>
-      <div>
-        <h4>Company</h4>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div>
-        <h4>Offerings</h4>
-        <a href="xtreck-carbon.html">Xtreck Carbon</a>
-        <a href="xtreck-support.html">Xtreck Support</a>
-      </div>
-      <div>
-        <h4>Legal</h4>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms &amp; Conditions</a>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>© 2026 Xtreck Group. All rights reserved.</p>
+      <div><h4>Xtreck Group</h4><p>Umbrella company for Xtreck Carbon and Xtreck Support.</p></div>
+      <div><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li></ul></div>
     </div>
   </footer>
 
