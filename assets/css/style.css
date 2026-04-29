@@ -311,8 +311,63 @@ img {
   gap: 16px;
 }
 
+.site-footer small {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
 .legal-copy p {
   margin-bottom: 18px;
+}
+
+/* Testimonial */
+blockquote {
+  margin: 24px auto 0;
+  max-width: 640px;
+  border-left: 4px solid #0b3d5c;
+  padding: 20px 28px;
+  background: #ffffff;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+blockquote {
+  text-align: left;
+}
+
+blockquote p {
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #374151;
+  margin: 0 0 14px;
+}
+
+blockquote p::before {
+  content: '\201C';
+  font-size: 2rem;
+  color: #0b3d5c;
+  opacity: 0.15;
+  line-height: 0;
+  vertical-align: -0.45em;
+  margin-right: 4px;
+}
+
+blockquote cite {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #0b3d5c;
+}
+
+blockquote cite a {
+  color: #0f5d7a;
+  text-decoration: underline;
+}
+
+blockquote cite a:hover {
+  opacity: 0.8;
 }
 
 @media (max-width: 900px) {
